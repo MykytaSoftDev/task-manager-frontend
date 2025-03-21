@@ -17,3 +17,5 @@ export interface IAuthResponse {
 	accessToken: string
 	user: IUser
 }
+
+export type TypeUserForm = Omit<UserActivation, 'id'> & { password?: string }
